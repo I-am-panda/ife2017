@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgba(15,38,11,0.05);
+}
+section{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.section_1 header{
+    background-color: #00C7D6;
+    color: white;
+    height: 6rem;
+    text-align: center;
+    line-height: 6rem;  /*可实现文字垂直居中*/
+}
+.section_1 header a{
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 0.5rem;
+}
+.section_1 header a img{
+    width: 2.2rem;
+    vertical-align: sub; /*垂直对齐图像*/
+}
+.section_1 header h3{
+    font-size: 2.4rem;
+    display: inline;
+}
+.section_1 nav{
+    line-height: 6rem;
+}
+.section_1 nav ul{
+    list-style: none;
+    letter-spacing: -0.5rem;
+}
+.section_1 nav ul li{
+    letter-spacing: 0;
+    display: inline-block;
+    font-size: 2.2rem;
+    width: 20%;
+    text-align: center;
+    color: rgba(71,71,71,0.95);
+}
+.section_1 nav ul li:nth-of-type(2){
+    border-bottom: solid 0.2rem #00C7D6;
+}
+.section_1 .img img{
+    width: 100%;
+}
+.section_1 .tag{
+    height: 16rem;
+}
+.section_1 .tag ul{
+    list-style: none;
+    letter-spacing: -0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.section_1 .tag ul li{
+    letter-spacing: 0;
+    display: inline-block;
+    width: 18.8%;
+    text-align: center;
+    margin: 1rem;
+    margin-top: 3rem;
+    box-sizing: border-box;
+}
+.section_1 .tag ul li img{
+    width: 3.5rem;
+    margin-top: 0.6rem;
+}
+.section_1 .tag ul li span{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00C7D6;
+}
+.section_1 .tag ul li p{
+    color: rgba(71,71,71,0.95);
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+.section_1 hr:nth-of-type(1){
+    background-color: #cccccc;
+    border: none;
+    width: 96%;
+    height: 0.2rem;
+    margin: 0 auto;
+}
+.section_1 .fenlan {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    align-items: flex-end;
+}
+.section_1 .fenlan div{
+    width: 33%;
+    text-align: center;
+    border-right: solid 0.2rem #ccc;
+    vertical-align: bottom;
+}
+.section_1 .fenlan div img{
+    width: 60%;
+}
+.section_1 .fenlan div:last-of-type{
+    border: none;
+}
+.section_1 .fenlan h2 {
+    font-size: 2.6rem;
+}
+.section_1 .fenlan h3 {
+    font-size: 2rem;
+    color: rgba(71,71,71,0.95);
+    margin-bottom: 1rem;
+}
+.section_2,.section_3{
+    height: 39rem;
+    margin-top: 2rem;
+}
+.section_2 h2,.section_3 h2{
+    font-size: 2.6rem;
+    color: rgba(71,71,71,0.95);
+    margin-left: 2%;
+    padding: 1rem;
+}
+.section_2 hr,.section_3 hr{
+    background-color: #cccccc;
+    border: none;
+    width: 96%;
+    height: 0.2rem;
+    margin: 0 auto;
+}
+
+
+
+.section_2 div ul,.section_3 div ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 1rem auto;
+    width: 97.5%;
+}
+.section_2 div ul li,.section_3 div ul li{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    justify-content: space-between;
+    margin: 1rem;
+
+}
+.section_2 div ul li:nth-of-type(1),.section_3 div ul li:nth-of-type(1){
+    flex-shrink: 3;
+    width: 13rem;
+}
+.section_2 div ul li p,.section_3 div ul li p{
+    background-color: rgba(15,38,11,0.05);
+    height: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding-top: 1.3rem;
+}
+.section_2 div img,.section_3 div img{
+    height: 13rem;
+    width: 13rem;
+    border: rgba(175,175,27,0.67) solid 1px;
+}
+.section_2 div section,.section_3 div section{
+    display: inline;
+    width: 80%;
+    background-color: #8FD6DA;
+}
+
+
+
+.section_4{
+    margin-top: 2rem;
+}
+.section_4 div{
+    margin: auto 2%;
+    overflow: hidden;
+}
+.section_4 div img{       /*此处文章标题和图片大小产生矛盾，字数影响布局*/
+    height: 12rem;
+    float: left;
+    clear: left;
+    padding: 1rem 0;
+}
+.section_4  h3{
+    font-size: 2rem;
+    padding: 2rem;
+    color: rgba(71,71,71,0.95);
+}
+.section_4 .lasth3{
+    padding-left: 0;
+}
+.section_4  p{
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+.section_4 hr{
+    background-color: #ccc;
+    height: 0.2rem;
+    border: none;
+}
+.section_4 .lastimg{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.section_4 .lastimg img{
+    width: 32%;
+    height: auto;
+}
+.section_4 .lastp{
+    margin-top: 1rem;
+    padding-left: 0;
+}
